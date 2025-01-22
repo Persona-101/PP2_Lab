@@ -6,8 +6,8 @@ import sys
 print(sys.version)
 
 #syntax
-if 5 > 2:
-    print("Five is greater than two!")
+if 4 > 3:
+    print("Four is greater than three")
 
 #This is a comment
 
@@ -18,17 +18,14 @@ more than just one line
 """
 
 #variables
-x, y = 5, "John"
+x, y = 10, "Cat"
 print(x)
 print(y)
 
-x = "Sally"
-print(x)
-
 #casting
-x = str(3)    
-y = int(3)    
-z = float(3)
+x = str(9)    
+y = int(9)    
+z = float(9)
 
 #type
 print(type(x))
@@ -36,42 +33,42 @@ print(type(y))
 print(type(z))
 
 #unpacking
-fruits = ['apple', 'banana', 'cherry']
+fruits = ['kiwi', 'pineapple', 'lemon']
 x, y, z = fruits
 print(x, y, z)
 
 #output
-x = "Python "
+x = "Today "
 y = "is "
-z = "awesome"
+z = "Sunday"
 print(x + y + z)
 
-x = 5
-y = 10
+x = 7
+y = 11
 print(x + y)
 
 #global and local variables
-x = "awesome"
+x = "Sunday"
 def myfunc():
-  x = "fantastic"
-  print("Python is " + x)
+  x = "Tuesday"
+  print("Today is " + x)
 myfunc()
-print("Python is " + x)
+print("Today is " + x)
 
 #global keyword
 def myfunc():
   global x
-  x = "fantastic"
+  x = "Bob"
 myfunc()
-print("Python is " + x)
+print("His name is " + x)
 
 #random number
 import random
-print(random.randrange(1, 10))
+print(random.randrange(1, 100))
 
 #type conversion
-x = 1    
-y = 2.8  
+x = 8    
+y = 3.3  
 z = 1j  
 
 a = float(x)
