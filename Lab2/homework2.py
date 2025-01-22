@@ -1,15 +1,15 @@
 #boolean
-print(10 > 9)
-print(10 == 9)
-print(10 < 9)
+print(4 > 1)
+print(40 == 23)
+print(5 < 0)
 
 
-a = 200
-b = 33
-if b > a:
-  print("b is greater than a")
+x = 50
+y = 2
+if x > y:
+  print("x is greater than y")
 else:
-  print("b is not greater than a")
+  print("x is not greater than y")
 
 
 print(bool("Abc"))
@@ -36,6 +36,52 @@ else:
   print("NO!")
 
 
-x = 200
+x = 8.8
 print(isinstance(x, int))
+
+#python operators
+a = 3
+b = 5
+a += 5
+print(a + b)
+print(a != b)
+print(a < 10 and b > 0)
+print(a is b)
+print(a << 3)
+
+
+x = [5, 6, 7]
+print(6 in x)
+
+
+print((2 + 99) * (5 - 24) + 56)
+
+
+#if else
+x = 10
+y = 13
+z = 50
+if x < z and y < z: 
+  print("z is greater than x and y")
+elif x > z and y > z:
+  print("x and y are greater than z")
+else:
+  print("other option")
+
+
+age = 40
+if age >= 16:
+  print("You can get driver's license")
+  if age >= 18:
+    print("You can take out a loan")
+  else:
+    print("Not eligible for loan")
+else:
+  print("Not eligible for driver's license")
+
+
+a = 1
+b = 2
+if a != b:
+  pass
 
