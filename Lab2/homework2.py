@@ -24,9 +24,9 @@ class myclass():
 myobj = myclass()
 print(bool(myobj))
 
-def myFunction() :
+def BoolFunction():
   return True
-if myFunction():
+if BoolFunction():
   print("YES!")
 else:
   print("NO!")
@@ -70,6 +70,14 @@ schedule.insert(4, "python")
 schedule.append("business analytics")
 schedule.extend(extra)
 print(schedule)
+
+mylist = [50, 20, 3, 6, 20]
+mylist.remove(20)
+mylist.pop(2)
+del mylist[0]
+print(mylist)
+mylist.clear()
+print(mylist)
 
 
 #if else
