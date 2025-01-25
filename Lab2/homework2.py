@@ -85,3 +85,58 @@ b = 2
 if a != b:
   pass
 
+
+#while loop
+i == 10
+while i > 0:
+  if i % 2 != 0:
+    continue
+  print(i)
+  i -= 1
+else:
+  print("i is no longer a positive number")
+
+
+i = 0
+while i < 10:
+  print(i)
+  if i == 8:
+    break
+  i += 1
+
+
+#for loop
+shopping_list = ["carrot", "cucumber", "rice"]
+for x in shopping_list:
+  if x == "rice":
+    break
+  if x == "cucumber":
+    continue
+  print(x)
+
+
+for x in range(1, 10, 2):
+  print(x)
+else:
+  print("No more numbers")
+
+
+subject = ["calculus", "algebra", "PP2"]
+time = ["8am", "1pm", "3pm"]
+for x in subject:
+  for y in time:
+    print(x, y)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
