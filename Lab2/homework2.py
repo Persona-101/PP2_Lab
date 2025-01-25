@@ -3,14 +3,12 @@ print(4 > 1)
 print(40 == 23)
 print(5 < 0)
 
-
 x = 50
 y = 2
 if x > y:
   print("x is greater than y")
 else:
   print("x is not greater than y")
-
 
 print(bool("Abc"))
 print(bool(""))
@@ -20,13 +18,11 @@ print(bool(["a", "b", "c"]))
 print(bool([]))
 print(bool(None))
 
-
 class myclass():
   def __len__(self):
     return 0
 myobj = myclass()
 print(bool(myobj))
-
 
 def myFunction() :
   return True
@@ -35,9 +31,9 @@ if myFunction():
 else:
   print("NO!")
 
-
 x = 8.8
 print(isinstance(x, int))
+
 
 #python operators
 a = 3
@@ -49,12 +45,31 @@ print(a < 10 and b > 0)
 print(a is b)
 print(a << 3)
 
-
 x = [5, 6, 7]
 print(6 in x)
 
-
 print((2 + 99) * (5 - 24) + 56)
+
+
+#list
+subjects = ["calculus", "PP2", "algebra", "econ", "PE", "PE"]
+subjects[4] = "statistics"
+print(subjects)
+print(len(subjects))
+print(type(subjects))
+print(subjects[0])
+print(subjects[-1])
+print(subjects[1:4])
+if "PP2" in subjects:
+  print("Yes, it's in the list")
+
+schedule = list(("calculus", "PP2", "algebra", "econ", "PE", "statistics"))
+extra = ["finance", "banking"]
+schedule[1:3] = ["data science", "advanced statistics"]
+schedule.insert(4, "python")
+schedule.append("business analytics")
+schedule.extend(extra)
+print(schedule)
 
 
 #if else
@@ -68,7 +83,6 @@ elif x > z and y > z:
 else:
   print("other option")
 
-
 age = 40
 if age >= 16:
   print("You can get driver's license")
@@ -78,7 +92,6 @@ if age >= 16:
     print("Not eligible for loan")
 else:
   print("Not eligible for driver's license")
-
 
 a = 1
 b = 2
@@ -96,14 +109,13 @@ while i > 0:
 else:
   print("i is no longer a positive number")
 
-
 i = 0
 while i < 10:
   print(i)
   if i == 8:
     break
   i += 1
-
+  
 
 #for loop
 shopping_list = ["carrot", "cucumber", "rice"]
@@ -114,12 +126,10 @@ for x in shopping_list:
     continue
   print(x)
 
-
 for x in range(1, 10, 2):
   print(x)
 else:
   print("No more numbers")
-
 
 subject = ["calculus", "algebra", "PP2"]
 time = ["8am", "1pm", "3pm"]
