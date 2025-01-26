@@ -79,6 +79,64 @@ print(mylist)
 mylist.clear()
 print(mylist)
 
+list1 = ["phone number", "ID", "code"]
+for x in list1:
+  print(x)
+list2 = ["USA", "UK", "Australia"]
+for i in range(len(list2)):
+  print(list2[i])
+list3 = [1, 5, 8, 9]
+i = 0
+while i < len(list3):
+  print(list3[i])
+  i = i + 1
+
+list4 = ["54", "21", "45", "8"]
+newlist = [x for x in list4 if "4" in x]
+print(newlist)
+newlist2 = [x if x != "45" else "55" for x in list4]
+print(newlist2)
+
+fruits = ["Orange", "mango", "Kiwi", "pineapple", "Banana"]
+fruits.sort()
+print(fruits)
+fruits.sort(reverse = True)
+print(fruits)
+fruits.sort(key = str.lower)
+print(fruits)
+
+numbers = [100, 50, 65, 82, 23]
+numbers.sort()
+print(numbers)
+numbers.sort(reverse = True)
+print(numbers)
+numbers.reverse()
+print(numbers)
+
+code = [210, 526, 234, 847]
+code2 = code.copy()
+code3 = list(code)
+code4 = code[:]
+print(code2)
+print(code3)
+print(code4)
+
+list1 = ["h", "e", "l", "l", "o"]
+list2 = [" ", "c", "a", "t"]
+list3 = list1 + list2
+print(list3)
+
+list1 = ["h", "e", "l", "l", "o"]
+list2 = [" ", "c", "a", "t"]
+for x in list2:
+  list1.append(x)
+print(list1)
+
+list1 = ["h", "e", "l", "l", "o"]
+list2 = [" ", "c", "a", "t"]
+list1.extend(list2)
+print(list1)
+
 
 #if else
 x = 10
