@@ -191,12 +191,60 @@ while i < len(tuple4):
 
 
 #set
+colors = {"red", "green", "blue", "red", True, 1, 0, False}
+print(len(colors))
+print(type(colors))
+print(colors)
 
+colors = set(("red", "green", "blue"))
+for x in colors:
+  print(x)
+print("red" in colors)
+print("red" not in colors)
 
+colors = {"red", "green", "blue"}
+colors2 = ["orange", "violet"]
+colors.update(colors2)
+colors.add("white")
+colors.remove("red")
+colors.discard("orange")
+x = colors.pop()
+print(x)
+print(colors)
 
+games = {"Zelda", "Persona 4", "Ace attorney"}
+games2 = {"Persona 5", "Ace attorney"}
+games3 = {"Danganronpa", "Resident evil", "Zelda"}
+games4 = {"Resident evil", "Mario kart"}
+union_set = games.union(games2, games3)
+print(union_set)
+intrs = games.intersection(games2)
+print(intrs)
+games2.intersection_update(games)
+print(games2)
+diff = games.difference(games3)
+print(diff)
+games.difference_update(games3)
+print(games)
+sdiff = games3.symmetric_difference(games4)
+print(sdiff)
+games3.symmetric_difference_update(games4)
+print(games3)
+
+a = {"a", "g", "c", "e", "b"}
+b = {"a", "b", "c"}
+z = a.isdisjoint(b)
+print(z)
+z = b.issubset(a)
+print(z)
+z = a.issuperset(b)
+print(z)
 
 
 #dictionary
+
+
+
 
 
 #if else
