@@ -1,7 +1,5 @@
 #boolean
 print(4 > 1)
-print(40 == 23)
-print(5 < 0)
 
 x = 50
 y = 2
@@ -18,18 +16,12 @@ print(bool(["a", "b", "c"]))
 print(bool([]))
 print(bool(None))
 
-class myclass():
-  def __len__(self):
-    return 0
-myobj = myclass()
-print(bool(myobj))
-
 def BoolFunction():
   return True
 if BoolFunction():
-  print("YES!")
+  print("True")
 else:
-  print("NO!")
+  print("False")
 
 x = 8.8
 print(isinstance(x, int))
@@ -136,6 +128,75 @@ list1 = ["h", "e", "l", "l", "o"]
 list2 = [" ", "c", "a", "t"]
 list1.extend(list2)
 print(list1)
+
+list_1 = [1, 2, 5, 8, 5]
+x = list_1.count(5)
+y = list_1.index(8)
+print(x)
+print(y)
+
+
+#tuples
+tuple1 = ("ffjfn", True, "hbhdf", "abab", 12, True)
+print(tuple1)
+print(len(tuple1))
+a = tuple1.count(12)
+print(a)
+b = tuple1.index(12)
+print(b)
+
+tuple2 = ("nana",)
+print(type(tuple2))
+
+both_tuples = tuple1 + tuple2
+print(both_tuples)
+
+m_tuple = tuple2 * 2
+print(m_tuple)
+
+tuple1 += tuple2
+print(tuple1)
+
+tuple3 = tuple(("bd", "time", 256))
+print(tuple3[0])
+print(tuple[:2])
+print(tuple[1:])
+if "time" in tuple3:
+  print("True")
+
+t = (21, 54, 23)
+m = list(t)
+m[0] = 55
+m.append(83)
+m.remove(54)
+t = tuple(m)
+print(t)
+del t
+
+books = ("mo dao zu shi", "tian guan ci fu", "Pride and prejudice", "Harry Potter")
+(*first, second, third) = books
+print(first)
+print(second)
+print(third)
+
+tuple4 = (1, 2, 3, 4, 5)
+for x in tuple4:
+  print(x)
+for i in range(len(tuple4)):
+  print(tuple4[i])
+i = 0
+while i < len(tuple4):
+  print(tuple4[i])
+  i += 1
+
+
+#set
+
+
+
+
+
+#dictionary
 
 
 #if else
