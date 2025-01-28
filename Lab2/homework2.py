@@ -242,9 +242,66 @@ print(z)
 
 
 #dictionary
+dict1 = {
+  "brand": "Samsung",
+  "year": 2015,
+  "screen" = "LCD",
+  "screen" = "OLED"
+  "tech": ["smartphone", "laptop", "charging cable"]
+}
+print(dict1)
+print(len(dict1))
+print(dict1["brand"])
+x = dict1.get("year")
+print(x)
+y = dict1.keys()
+print(y)
+z = dict1.values()
+print(z)
+i = dict1.items()
+print(i)
 
+dict2 = dict(name = "Sabina", age = 20, occupation = "student")
+dict2["age"] = 21
+dict2.update({"name": "Sabina Khalidullina"})
+dict2["university"] = "KBTU"
+dict2.update({"major": "Data Science"})
+dict2.pop("occupation")
+dict2.popitem()
+del dict2["age"]
 
+for x in dict2.keys():
+  print(x)
+for x in dict2.values():
+  print(x)
+for x, y in dict2.items():
+  print(x, y)
 
+dict3 = dict2.copy()
+mydict = dict(dict3)
+print(dict3)
+print(mydict)
+
+studies = {
+  "calculus" : {
+    "hours per week" : 3,
+    "grade" : 81
+  },
+  "algebra" : {
+    "hours per week" : 3,
+    "grade" : 89
+  },
+  "statistics" : {
+    "hours per week" : 4,
+    "grade" : 77
+  }
+}
+
+for x, obj in studies.items():
+  print(x)
+
+  for y in obj:
+    print(y + ':', obj[y])
 
 
 #if else
