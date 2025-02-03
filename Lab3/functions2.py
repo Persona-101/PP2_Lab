@@ -76,6 +76,7 @@ movies = [
 }
 ]
 
+
 #exercise 1
 def above5(dict_mov, movie_name):
     for movie in movies:
@@ -86,6 +87,7 @@ def above5(dict_mov, movie_name):
                 print(False)
 inp = input("Enter the name: ")
 above5(movies, inp)
+
 
 #exercise 2
 def list_above5(dict_mov):
