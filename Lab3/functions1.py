@@ -110,7 +110,11 @@ uniq_func(e_list)
 #exercise 11
 word = str(input())
 def palindrome(input_w):
-    print(input_w[::-1])
+    rev_word = input_w[::-1]
+    if rev_word == input_w:
+        print(True)
+    else:
+        print(False)
 palindrome(word)
 
 
