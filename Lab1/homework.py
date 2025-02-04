@@ -82,3 +82,57 @@ print(c)
 print(type(a))
 print(type(b))
 print(type(c))
+
+#strings
+print("I am learning 'python'")
+
+a = """Gbfbfknaj
+fhbfhkfb
+fjnfskjfeklkamm
+kjfflksefk"""
+print(a)
+
+a = "I'm 20 years old"
+print(a[1])
+
+for x in "apple":
+  print(x)
+
+a = "I'm 20 years old"
+print(len(a))
+
+txt = "Chinese language is difficult"
+if "language" in txt:
+  print("Yes, 'language' is present.")
+
+txt = "Chinese language is difficult"
+if "Korean" not in txt:
+  print("No, 'Korean' is NOT present.")
+
+b = "Smartphone"
+print(b[2:5])
+print(b[:5])
+print(b[2:])
+print(b[-5:-2])
+
+a = "Smartphone"
+print(a.upper())
+print(a.lower())
+print(a.strip())
+print(a.replace("p", "c"))
+print(a.split(","))
+
+a = "My"
+b = "name"
+c = a + " " + b
+print(c)
+
+age = 20
+txt = f"My name is Sabina, I am {age}"
+print(txt)
+
+price = 22000
+txt = f"The price is {price:.2f} tenge"
+print(txt)
+
+txt = "I a \"second\" year student"
