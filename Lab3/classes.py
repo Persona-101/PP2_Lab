@@ -94,3 +94,14 @@ money = Account("Kaspi", 1000)
 money.deposit(500)
 money.withdraw(1300)
 money.withdraw(1800)
+
+
+#exercise 6
+def filter(given_list):
+    for x in given_list:
+        is_prime = lambda x: x > 1 and all(x % i != 0 for i in range(2, x))
+        if is_prime(x):
+            print(x)
+
+my_list = [1, 2, 6, 11, 12, 13]
+filter(my_list)
