@@ -25,7 +25,6 @@ solve(heads, legs)
 
 
 #exercise 4
-my_list = [1, 2, 6, 11, 12, 13]
 def is_prime(the_list):
     for x in the_list:
         i = 1
@@ -36,6 +35,7 @@ def is_prime(the_list):
             i += 1
         if cnt == 2:
             print(x)
+my_list = [1, 2, 6, 11, 12, 13]
 is_prime(my_list)
 
 
@@ -50,39 +50,44 @@ the_permutations(user_input)
 
 
 #exercise 6
-my_str = str(input())
-def rev_func(str1):
-    list1 = str1.split()
-    list1.reverse()
-    str2 = " ".join(list1)
-    print(str2)
-rev_func(my_str)
+my_string = str(input())
+def reverse_func(string1):
+    mylist = string1.split()
+    mylist.reverse()
+    string2 = " ".join(mylist)
+    print(string2)
+reverse_func(my_string)
 
 
 #exercise 7
-given_list = [1, 3, 3, 5, 0]
-def has_33(g_list):
-    for i in range(len(g_list) - 1):
-        if g_list[i] == 3 and g_list[i + 1] == 3:
+def has_33(given_list):
+    for i in range(len(given_list) - 1):
+        if given_list[i] == 3 and given_list[i + 1] == 3:
             state = True
             break
         else:
             state = False
     print(state)
-has_33(given_list)
+has_33([1, 3, 3]) 
+has_33([1, 3, 1, 3]) 
+has_33([3, 1, 3]) 
 
 
 #exercise 8
-given_list = [0, 0, 7, 3, 5, 6]
-def spy_game(g_list):
-    for i in range(len(g_list) - 1):
-        if g_list[i] == 0 and g_list[i + 1] == 0 and g_list[i + 2] == 7:
+def spy_game(given_list):
+    find = [0, 0, 7]
+    i = 0
+    for num in given_list:
+        if num == find[i]:
+            i += 1
+        if i == 3:
             state = True
             break
-        else:
-            state = False
+        state = False
     print(state)
-spy_game(given_list)
+spy_game([1,2,4,0,0,7,5])
+spy_game([1,0,2,4,0,5,7])
+spy_game([1,7,2,0,4,5,0])
 
 
 #exercise 9
@@ -103,25 +108,25 @@ def uniq_func(exist_list):
         else:
             newlist.append(x)
     print(newlist)
-e_list = [1, 3, 5, 5, 8, 8]
-uniq_func(e_list)
+example_list = [1, 3, 5, 5, 8, 8]
+uniq_func(example_list)
 
 
 #exercise 11
-word = str(input())
-def palindrome(input_w):
-    rev_word = input_w[::-1]
-    if rev_word == input_w:
+my_word = str(input())
+def palindrome(word):
+    rev_word = word[::-1]
+    if rev_word == word:
         print(True)
     else:
         print(False)
-palindrome(word)
+palindrome(my_word)
 
 
 #exercise 12
 def histogram(n):
-    for y in n:
-        print("*" * y)
+    for i in n:
+        print("*" * i)
 My_list = [4, 9, 7]
 histogram(My_list)
 
