@@ -1,28 +1,28 @@
 #exercise 1
-from datetime import datetime, timedelta
-today = datetime.today()
-new_date = today - timedelta(days=5)
+import datetime
+now = datetime.datetime.now()
+tdelta1 = datetime.timedelta(days = 5)
+new_date = now - tdelta1
 print(new_date)
 
 #exercise 2
-from datetime import datetime, timedelta
-today = datetime.today()
-yesterday = today - timedelta(days=1)
-tomorrow = today + timedelta(days=1)
-print("Yesterday:", yesterday.strftime('%Y-%m-%d'))
-print("Today:", today.strftime('%Y-%m-%d'))
-print("Tomorrow:", tomorrow.strftime('%Y-%m-%d'))
+tdelta2 = datetime.timedelta(days = 1)
+
+today = datetime.datetime.now()
+yesterday = today - tdelta2
+tomorrow = today + tdelta2
+
+print(today)
+print(yesterday)
+print(tomorrow)
 
 #exercise 3
-from datetime import datetime
-now = datetime.now()
-now_without_microseconds = now.replace(microsecond=0)
-print("Original datetime:", now)
-print("Datetime without microseconds:", now_without_microseconds)
+with_micro = datetime.datetime.now()
+without_micro = with_micro.replace(microsecond = 0)
+print(without_micro)
 
 #exercise 4
-from datetime import datetime
-date1 = datetime(2024, 2, 10, 12, 30, 15) 
-date2 = datetime(2024, 2, 12, 14, 45, 30)  
-difference = abs((date2 - date1).total_seconds())
-print("Difference in seconds:", difference)
+date1 = datetime.datetime(2020, 1, 20, 18, 42, 10, 10000)
+date2 = datetime.datetime(2023, 5, 6, 8, 20, 50, 10000)
+diff = date2 - date1
+print(diff.total_seconds())
