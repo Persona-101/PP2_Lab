@@ -1,32 +1,42 @@
 import re
+txt = "The sun dipped below the horizon, painting the sky in shades of orange and pink. A gentle breeze rustled the leaves, whispering secrets of the coming night."
 
-def match_a_followed_by_b(string):
-    return bool(re.fullmatch(r'a*b*', string))
+#exercise 1
+x = re.findall("ab*", txt)
+print(x)
 
-def match_a_followed_by_two_three_b(string):
-    return bool(re.fullmatch(r'ab{2,3}', string))
+#exercise 2
+y = re.findall("ab{2,3}", txt)
+print(y)
 
-def find_lowercase_with_underscore(string):
-    return re.findall(r'\b[a-z]+_[a-z]+\b', string)
+#exercise 3
+z = re.findall("[a-z]+_[a-z]+" ,txt)
+print(z)
 
-def find_upper_followed_by_lower(string):
-    return re.findall(r'[A-Z][a-z]+', string)
+#exercise 4
+a = re.findall("[A-Z]{1}[a-z]+", txt)
+print(a)
 
-def match_a_anything_b(string):
-    return bool(re.fullmatch(r'a.*b', string))
+#exercise 5
+b = re.findall("a.*b", txt)
+print(b)
 
-def replace_space_comma_dot(string):
-    return re.sub(r'[ ,.]', ':', string)
+#exercise 6
+c = re.sub(r"[ ,.]", ":", txt)
+print(c)
 
-def snake_to_camel(snake_str):
-    components = snake_str.split('_')
-    return components[0] + ''.join(x.capitalize() for x in components[1:])
+#exercise 7
+f = re.sub(r'_([a-z])', lambda match: match.group(1).upper(), txt)
+print(f)
 
-def split_at_uppercase(string):
-    return re.split(r'(?=[A-Z])', string)
+#exercise 8
+d = re.split("[A-Z]", txt)
+print(d)
 
-def insert_spaces_between_capitals(string):
-    return re.sub(r'([A-Z])', r' \1', string).strip()
+#exercise 9
+e = re.sub(r"([a-z])([A-Z])", r"\1 \2", txt)
+print(e)
 
-def camel_to_snake(camel_str):
-    return re.sub(r'(?<!^)(?=[A-Z])', '_', camel_str).lower()
+#exercise 10
+g = re.sub(r'([a-z])([A-Z])', r'\1_\2', txt).lower()
+print(g)
