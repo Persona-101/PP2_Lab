@@ -85,24 +85,18 @@ def main():
                 elif event.key == pygame.K_BACKSPACE:
                     active_color = BLACK
 
-                # Change shape size
-                elif event.key == pygame.K_EQUALS or event.key == pygame.K_KP_PLUS:
-                    shape_dimension = min(300, shape_dimension + 10)
-                elif event.key == pygame.K_MINUS or event.key == pygame.K_KP_MINUS:
-                    shape_dimension = max(20, shape_dimension - 10)
-
                 # Draw shapes based on key press
-                elif event.key == pygame.K_w:
+                elif event.key == pygame.K_l:
                     drawRectangle(canvas, pygame.mouse.get_pos(), shape_dimension * 2, shape_dimension, active_color)
                 elif event.key == pygame.K_c:
                     drawCircle(canvas, pygame.mouse.get_pos(), active_color, shape_dimension)
-                elif event.key == pygame.K_q:
+                elif event.key == pygame.K_s:
                     drawSquare(canvas, pygame.mouse.get_pos(), active_color, shape_dimension)
                 elif event.key == pygame.K_t:
                     drawRightTriangle(canvas, pygame.mouse.get_pos(), active_color, shape_dimension)
                 elif event.key == pygame.K_e:
                     drawEquilateralTriangle(canvas, pygame.mouse.get_pos(), active_color, shape_dimension)
-                elif event.key == pygame.K_d:
+                elif event.key == pygame.K_h:
                     drawRhombus(canvas, pygame.mouse.get_pos(), active_color, shape_dimension)
 
             if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
