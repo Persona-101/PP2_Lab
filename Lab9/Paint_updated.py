@@ -1,6 +1,6 @@
 import pygame
 
-# Define New Color Palette
+# Define Color Palette
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 GREEN = (34, 139, 34)
@@ -8,7 +8,7 @@ BLUE = (0, 0, 255)
 RED = (255, 0, 0)
 YELLOW = (255, 255, 0)
 
-# Drawing Functions (Unchanged)
+# Drawing Functions
 def drawLineBetween(window, start_pos, end_pos, thickness, draw_color):
     dx = start_pos[0] - end_pos[0]
     dy = start_pos[1] - end_pos[1]
@@ -52,7 +52,7 @@ def drawRhombus(window, position, color, size):
     ]
     pygame.draw.polygon(window, color, points, 3)
 
-# Main Function (Reordered)
+# Main Function
 def main():
     pygame.init()
     canvas = pygame.display.set_mode((640, 480))
